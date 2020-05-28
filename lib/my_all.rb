@@ -14,3 +14,13 @@ def my_all?(collection)
     true
   end
 end
+
+
+def my_all?(collection)
+  i = 0
+  while i < collection.length
+    return false if !yield(collection[i])
+    i += 0
+  end
+  true
+end
